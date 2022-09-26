@@ -1,0 +1,990 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Rubik';
+}
+
+/* This is the design for the first section of the page containing the navs and head of the page */
+.section-one{
+    background-color: rgba(13, 13, 43, 1);
+    background-image: url(images/[].png), url(images/[]\ \(1\).png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, bottom center;
+    background-size: 50% 50%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem ;
+}
+
+.navs{
+    display: flex;
+    gap: 2rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+li a{
+    color:#FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+li a:hover{
+    color: rgba(54, 113, 233, 1);
+    transition: 0.3s;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.sign-in{
+    display: flex;
+    gap: 1rem;
+}
+.vr{
+    height: 2rem;
+    width: .1rem;
+    background-color: rgba(242, 242, 242, 1);
+    margin-top: .5rem;
+}
+.login{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+.login:hover{
+    color: rgba(54, 113, 233, 1);
+    transition: 0.3s;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.register{
+    background-color: rgba(54, 113, 233, 1);
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+}
+.register a{
+    color: #FFFFFF;
+    font-size: .9rem;
+}
+.register:hover{
+    background: transparent;
+    border: 1px solid rgba(54, 113, 233, 1);
+    transition: 0.5s;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+}
+
+.discount{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: 1rem;
+    align-items: center;
+    border-radius: 16px;
+    width: 70%;
+    margin-top: 5rem;
+}
+.save{
+    background-color: #FFFFFF;
+    padding: .3rem;
+    width: 30%;
+    border-radius: 16px;
+}
+.save p{
+    color: rgba(13, 13, 43, 1);
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.black{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.pg1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 76px;
+    color: #FFFFFF;
+    padding-top: 2rem;
+}
+
+.pg2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgba(224, 224, 224, 1);
+    padding: 2rem 0;
+}
+
+.btn1{
+    background-color: rgba(54, 113, 233, 1);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-radius: 30px;
+}
+.btn1 a{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn1:hover{
+    background: transparent;
+    border: 1px solid rgba(54, 113, 233, 1);
+    transition: 0.5s;
+}
+
+.container2 img{
+    width: 100%;
+}
+
+/* The begining of the second section of the page */
+.section-two{
+    background-color: rgba(13, 13, 43, 1);
+    padding: 5rem 5rem;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    background-image: url(images/D.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.currency, .wallets, .countries{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency p, .wallets p, .countries p{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.currency p::after{
+    content: 'Digital Currency Exchanged';
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    padding-top: .3rem;
+    color: rgba(224, 224, 224, 1)
+}
+
+.wallets p::after{
+    content: 'Trusted Wallets Investor';
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    padding-top: .3rem;
+    color: rgba(224, 224, 224, 1)
+}
+.countries p::after{
+    content: 'Countries Supported';
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    padding-top: .3rem;
+    color: rgba(224, 224, 224, 1)
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-image: url(images/u.png);
+    background-repeat:no-repeat;
+    background-position: bottom right;
+}
+
+.box1 img{
+    max-width: 100%;
+}
+
+.pg3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.pg4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: rgba(224, 224, 224, 1);
+}
+
+.learn{
+    background-color: rgba(54, 113, 233, 1);
+    border: none;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 16px;
+}
+.learn:hover{
+    background: transparent;
+    border: 1px solid rgba(54, 113, 233, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* The third section od the page design */
+.section-three{
+    background-color: rgba(13, 13, 43, 1);
+    padding: 0;
+}
+
+.pg5{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    padding: 2rem 0;
+}
+
+.pg6{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 150%;
+    color: rgba(224, 224, 224, 1);
+    padding-bottom: 3rem;
+}
+
+.box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgba(251, 252, 254, 1);
+    border-radius: 16px 16px 0px 0px;
+    padding: 3rem 2rem;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+#rate{
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    padding: .3rem 1rem;
+    outline: none;
+    color: rgba(13, 13, 43, 1);
+    font-size: 1.2rem;
+}
+
+#choose{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    padding-right: 5rem;
+    padding-bottom: .3rem;
+    outline: none;
+    color: rgba(13, 13, 43, 1);
+    font-size: 1.2rem;
+}
+#rate::placeholder{
+    color: #0D0D2B;
+    font-size: .8rem;
+}
+
+input[type=submit]{
+    background-color: rgba(54, 113, 233, 1);
+    border: none;
+    padding: .7rem 1.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+input[type=submit]:hover{
+    background: transparent;
+    border: 1px solid rgba(54, 113, 233, 1);
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgba(54, 113, 233, 1);
+}
+
+/* This is the design of the fourth part of the page */
+.section-four{
+    background-color: rgba(251, 252, 254, 1);
+}
+
+.container5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+    width: 70%;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 16px 16px;
+    padding: 2rem 2rem;
+    gap: 1rem;
+    box-shadow: 0px 80px 40px rgba(242, 242, 242, 1);
+}
+
+.pg7{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(54, 113, 233, 1);
+}
+
+.pg8{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(13, 13, 43, 1);
+}
+.pg9{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(130, 130, 130, 1);
+}
+
+.pg10{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: rgba(13, 13, 43, 1);
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.box4, .box5, .box6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+}
+
+.box4{
+    background-color: rgba(43, 7, 110, 1);
+    border-radius: 30px;
+}
+
+.box4:hover{
+    transform: translateY(-1.5rem);
+    transition: all 0.4s ease-in;
+    background-color: white;
+    box-shadow: 0px 40px 40px rgba(130, 130, 130, 0.5);
+}
+.box4:hover .btc{
+    color: #0D0D2B;
+}
+.box4:hover .pg11{
+    color: #0D0D2B;
+}
+.box4:hover .btn2:hover a{
+    color: #0D0D2B;
+}
+.box5, .box6{
+    /* background-color: red; */
+    border-radius: 30px;
+    box-shadow: 0px 40px 40px rgba(130, 130, 130, 0.5);
+}
+
+.box5:hover{
+    background-color: rgba(43, 7, 110, 1);
+    transform: translateY(-1.5rem);
+    transition: all 0.4s ease-in;
+    box-shadow: 0px 40px 40px rgba(130, 130, 130, 0.5);
+}
+.box5:hover .pg12{
+    color: #FFFFFF;
+}
+.box5:hover .eth{
+    color: #FFFFFF;
+}
+
+.box6:hover{
+    background-color: rgba(43, 7, 110, 1);
+    transform: translateY(-1.5rem);
+    transition: all 0.4s ease-in;
+    box-shadow: 0px 40px 40px rgba(130, 130, 130, 0.5);
+}
+.box6:hover .pg12{
+    color: #FFFFFF;
+}
+.box6:hover .ltc{
+    color: #FFFFFF;
+}
+
+.btc{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1rem;
+}
+.btc::after{
+    content: 'BTC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: .5rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.pg11{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn2{
+    background-color: rgba(54, 113, 233, 1);
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-radius: 30px;
+}
+.btn2 a{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn2:hover{
+    background: transparent;
+    border: 1px solid rgba(54, 113, 233, 1);
+    transition: 0.5s;
+}
+
+.eth{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(13, 13, 43, 1);
+    text-align: center;
+    padding-top: 1rem;
+}
+.eth::after{
+    content: 'ETH';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: .5rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.ltc{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(13, 13, 43, 1);
+    text-align: center;
+    padding-top: 1rem;
+}
+.ltc::after{
+    content: 'LTC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: .5rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.pg12{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgba(13, 13, 43, 1);
+    text-align: center;
+}
+
+
+/* This is the design of the fifth sction of the page */
+.section-five{
+    background-color: rgba(43, 7, 110, 1);
+    padding: 5rem 0;
+    background-image: url(images/o.png), url(images/o\ \(1\).png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, top left;
+}
+
+.pg13{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.pg14{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+.pg15{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgba(224, 224, 224, 1);
+    padding-bottom: 1rem;
+}
+
+.container7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+.container8{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    gap: 5rem;
+}
+
+.box8 img, .box12 img, .box9 img{
+    max-width: 100%;
+}
+
+/* This is the design of the sixth part of the page */
+.section-six{
+    background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+    padding: 3rem 0;
+}
+
+.container10{
+    background-color: rgba(54, 113, 233, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    border-radius: 16px;
+    background-image: url(images/Mask\ Group.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.pg16{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+.pg17{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+input[type=email]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-right: 4rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: .3rem;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+input[type=email]::placeholder{
+    color: #FFFFFF;
+    font-size: .8rem;
+}
+
+input[type=button]{
+    background-color: #FFFFFF;
+    border: none;
+    padding: .7rem 1.5rem;
+    color: rgba(13, 13, 43, 1);
+    font-size: 1rem;
+    border-radius: 30px;
+}
+input[type=button]:hover{
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+/* This is ther design of the last part of the page */
+.section-seven{
+    background-color: rgba(13, 13, 43, 1);
+    padding: 5rem 5rem;
+}
+
+.container11{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+}
+
+.pg19{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+}
+
+.pg20{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+.pg20:hover{
+    color: rgba(54, 113, 233, 1);
+    transition: 0.5s;
+}
+
+.pg18{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+}
+
+.container12{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.harmburger{
+    display: none;
+}
+
+/* the screen sizes design */
+@media screen and(max-width: 1280px){}
+
+@media screen and(max-width: 1024px){}
+
+@media (max-width: 768px){
+    header{
+        position: relative;
+        background: transparent;
+        padding: 2rem 2rem;
+    }
+    .logo{
+        position: relative;
+        z-index: 20;
+    }
+    .harmburger{
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+    .navs{
+        /* display: none; */
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgba(43, 7, 110, 1);
+        height: 80vh;
+        padding: 5rem 3rem;
+        transition: transform 1s;
+    }
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li a{
+        font-size: 1.2rem;
+    }
+    .login{
+        font-size: 1.2rem;
+        /* width: 20%; */
+    }
+
+    .sign-in{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vr{
+        display: none;
+    }
+    .open .navs{
+        transform: translateX(0);
+    }
+
+    .bar{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+
+    .open .bar{
+        display: none;
+    }
+    .open #close{
+        display: block;
+    }
+
+    .container2{
+        display: none;
+    }
+    
+    .section-one{
+        background-image: none;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+    }
+
+    .section-two{
+        background-color: rgba(13, 13, 43, 1);
+        padding: 3rem 2rem;
+    }
+
+    .container3{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .container4{
+        flex-wrap: wrap;
+    }
+    .box3, .container5{
+        width: 80%;
+    }
+    
+    .container6{
+        flex-wrap: wrap;
+    }
+
+    .container10{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .container10 form input[type=button]{
+        margin-top: 1rem;
+    }
+
+    .section-seven{
+        background-color: rgba(13, 13, 43, 1);
+        padding: 5rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .container11{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .container12{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .container1{
+        width: 100%;
+    }
+
+    .pg1, .pg13, .pg10{
+        font-size: 2.5rem;
+        line-height: 1.1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+
+    .save p, .black{
+        font-size: .8rem;
+    }
+
+    .pg1, .pg13, .pg10{
+        font-size: 2rem;
+    }
+    .discount{
+        width: 90%;
+        margin-top: 0rem;
+    }
+
+    .btn1{
+        background-color: rgba(54, 113, 233, 1);
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: .5rem 0;
+        border-radius: 30px;
+    }
+    .btn1 a{
+        color: #FFFFFF;
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    .pg5, .pg3, .pg8, .pg13, .pg18, .pg10{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .box3 form{
+        flex-wrap: wrap;
+    }
+    .box3 input[type=text]{
+        width: 100%;
+    }
+
+    .container9, .container8, .container7{
+        flex-wrap: wrap;
+    }
+
+    .container8{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container7{
+        gap: 2rem;
+    }
+
+    .pg14{
+        font-size: 1.5rem;
+    }
+
+    input[type=email]{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        padding-right: 0rem;
+        padding-left: 1rem;
+        margin-right: 0rem;
+        padding-bottom: .3rem;
+        outline: none;
+        color: #FFFFFF;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+
+    .container10{
+        width: 80%;
+    }
+
+    .pg16{
+        font-size: 1.5rem;
+    }
+}
